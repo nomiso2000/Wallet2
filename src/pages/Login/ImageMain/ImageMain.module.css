@@ -1,0 +1,24 @@
+.wrap {
+  z-index: 4;
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    width: 260.26px;
+    height: 250px;
+    background-image: url(../icons/img.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 16%;
+    top: 10%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrap {
+    width: 435.2px;
+    height: 419.5px;
+    background-image: url(../icons/imgScreen.svg);
+    background-repeat: no-repeat;
+  }
+}

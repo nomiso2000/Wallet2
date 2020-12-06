@@ -1,0 +1,70 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  width: 140px;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+}
+.logoText {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+.headerLogo {
+  height: 30px;
+}
+.headerName {
+  font-size: 18px;
+  color: #bdbdbd;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.headerEnd {
+  display: flex;
+  align-self: center;
+}
+.headerI {
+  display: none;
+}
+.headerName2 {
+  display: none;
+}
+.headerLogoutLink {
+  display: flex;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-left: 10vh;
+    padding-right: 10vh;
+    height: 80px;
+  }
+  .logoText {
+    font-size: 28px;
+  }
+  .headerLogo {
+    padding-right: 20px;
+    height: 40px;
+  }
+  .headerI {
+    display: block;
+    margin-right: 10px;
+  }
+  .headerName2 {
+    display: block;
+    font-size: 18px;
+    color: #bdbdbd;
+    margin-right: 10px;
+    line-height: 30px;
+    margin-left: 10px;
+  }
+}

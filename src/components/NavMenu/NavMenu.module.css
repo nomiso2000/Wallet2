@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../styles/fonts/poppins-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../../styles/fonts/poppins-v15-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../styles/fonts/poppins-v15-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../../styles/fonts/poppins-v15-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+      url('../../styles/fonts/poppins-v15-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+      url('../../styles/fonts/poppins-v15-latin-regular.svg#Poppins')
+      format('svg'); /* Legacy iOS */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../styles/fonts/poppins-v15-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../../styles/fonts/poppins-v15-latin-700.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../styles/fonts/poppins-v15-latin-700.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../../styles/fonts/poppins-v15-latin-700.woff') format('woff'),
+    /* Modern Browsers */ url('../../styles/fonts/poppins-v15-latin-700.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../../styles/fonts/poppins-v15-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+.navUsd {
+  display: block;
+}
+.navMD p {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .navContainer {
+    margin: 20px 0px;
+    display: flex;
+    width: 260px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  .navContainer {
+    margin-bottom: 40px;
+  }
+  .navMD {
+    display: flex;
+  }
+  .navMD p {
+    display: inline-block;
+    margin: 0;
+    padding-left: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .navUsd {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .background {
+    backdrop-filter: blur(50px);
+  }
+
+  .navContainer {
+    margin-bottom: 30px;
+  }
+
+  .nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /* height: 76.4vh; */
+    /* height: calc(100vh - 126px); */
+    height: 100vh;
+    padding-bottom: 28px;
+    padding-left: 6.7vw;
+    padding-top: 46px;
+  }
+
+  .navMD {
+    display: flex;
+    align-items: center;
+  }
+
+  .navMD:not(:nth-child(2n)) {
+    margin-bottom: 10px;
+  }
+  .navMD p {
+    display: inline-block;
+    margin: 0;
+    padding-left: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .navMD p:hover {
+    color: #4a56e2;
+  }
+  .navMD p:active {
+    font-weight: 700;
+  }
+
+  .navUsd {
+    display: none;
+  }
+}

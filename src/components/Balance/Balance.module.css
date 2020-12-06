@@ -1,0 +1,104 @@
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../styles/fonts/poppins-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../../styles/fonts/poppins-v15-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../styles/fonts/poppins-v15-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../../styles/fonts/poppins-v15-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+      url('../../styles/fonts/poppins-v15-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+      url('../../styles/fonts/poppins-v15-latin-regular.svg#Poppins')
+      format('svg'); /* Legacy iOS */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../styles/fonts/poppins-v15-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../../styles/fonts/poppins-v15-latin-700.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../styles/fonts/poppins-v15-latin-700.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../../styles/fonts/poppins-v15-latin-700.woff') format('woff'),
+    /* Modern Browsers */ url('../../styles/fonts/poppins-v15-latin-700.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../../styles/fonts/poppins-v15-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
+.div {
+  width: 280px;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+
+  /* padding-left: 30px; */
+  padding-top: 6px;
+}
+
+.balanceText {
+  font-size: 12px;
+  color: #a6a6a6;
+  line-height: 17.7px;
+  margin: 0;
+  padding-top: 6px;
+  padding-left: 30px;
+}
+
+.sign {
+  font-size: 30px;
+  line-height: 45px;
+  color: black;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  display: inline;
+  padding-left: 30px;
+}
+
+.balanceValue {
+  font-size: 30px;
+  line-height: 45px;
+  color: black;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  display: inline;
+  width: 100%;
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .div {
+    width: 334px;
+    /* padding-left: 40px; */
+  }
+  .balanceText,
+  .sign {
+    padding-left: 40px;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1280px) {
+  .div {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+
+  .balanceText,
+  .sign {
+    padding-left: 40px;
+  }
+}

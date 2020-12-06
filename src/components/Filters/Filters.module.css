@@ -1,0 +1,32 @@
+/* .Active-Nav-Link {
+  color: rgb(226, 101, 43);
+} */
+.filtersList {
+  display: flex;
+  list-style-type: none;
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+.filtersList :first-child {
+  margin-left: 6px;
+}
+
+.link {
+  color: blue;
+  cursor: pointer;
+}
+
+.hoveredLink {
+  color: blue;
+  cursor: pointer;
+  background-color: turquoise;
+  margin-right: 10px;
+}
+
+.link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link:hover {
+  background-color: rgb(218, 211, 211);
+}

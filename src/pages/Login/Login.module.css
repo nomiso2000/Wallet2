@@ -1,0 +1,140 @@
+/* * {
+   margin: 0;
+   padding: 0;  
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.textWallet {
+  margin-left: 100px;
+  margin-top: 110px;
+  padding-left: 60px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  background-image: url(./icons/wallet.svg);
+  background-repeat: no-repeat;
+}
+
+.textApp {
+  visibility: hidden;
+  z-index: 3;
+}
+
+@media (min-width: 768px) {
+  .rightWrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftWrapper {
+    width: 100%;
+    /* position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; */
+    background: #e7eaf2;
+  }
+
+  .textWallet {
+    margin-left: 179px;
+    margin-top: 40px;
+    padding-left: 60px;
+  }
+  .textApp {
+    visibility: visible;
+    position: absolute;
+    right: 20%;
+    top: 19%;
+    width: 187px;
+    height: 45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .violetCircle {
+    background-image: url(./icons/violetCircle.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 495px;
+    height: 440px;
+    left: 0px;
+    top: 585px;
+    z-index: 2;
+  }
+
+  .pinkCircle {
+    position: absolute;
+    right: 0px;
+    top: -418px;
+    width: 457px;
+    height: 383px;
+    background-image: url(./icons/pinkCircle.svg);
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  .textWallet {
+    position: relative;
+    margin-left: 179px;
+    margin-top: 40px;
+    padding-left: 60px;
+  }
+  .rightWrapper {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .leftWrapper {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e7eaf2;
+  }
+
+  .textApp {
+    position: absolute;
+    top: 83%;
+    right: auto;
+    width: 187px;
+    height: 45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .violetCircle {
+    left: 0;
+    bottom: 0px;
+    top: auto;
+    z-index: 1;
+  }
+
+  .pinkCircle {
+    background-image: url(./icons/pinkCircleScreen.svg);
+    width: 618px;
+    height: 547px;
+    right: 0;
+    top: 0;
+  }
+}

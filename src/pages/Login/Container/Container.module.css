@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #e7eaf2;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    margin: 0 auto;
+    height: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #e7eaf2;
+  }
+}

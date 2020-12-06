@@ -1,0 +1,36 @@
+__APP routes:
+
+http://localhost:3000 - basic route 
+
+/home - route to homepage
+/login - route for login existing user
+/register -route for registration new user
+
+__API routes:
+
+https://sheltered-sea-54747.herokuapp.com - basic URL 
+
+User_GET:
+/api/users/current - get information about current User
+/api/users/current/id - get id of User
+/api/users/current/username - get username of User
+/api/users/current/email - get email of User
+/api/users/current/balance - get balance of User
+
+Transaction_POST:
+/api/transactions - create new transaction (for logged in users)
+/api/transactions/transactionDate - information about the date of transaction 
+/api/transactions/type - information about the type of transaction
+/api/transactions/categoryId - id of the category of transaction
+/api/transactions/comment - comment for transaction
+/api/transactions/amount - amount of money spent on transaction
+
+Transaction_GET:
+/api/transactions/id - get id of transaction
+/api/transactions/transactionDate - get date of transaction
+/api/transactions/type - get transaction type 
+/api/transactions/categoryId - get the id of category of transaction
+/api/transactions/userId - get the id of user, who made transaction
+/api/transactions/comment - get comment for transaction
+/api/transactions/amount - get the amount of money spent or got by transaction
+/api/transactions/balanceAfter - get amount of money, that are currently on balance after transaction

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.BtnReg {
+  position: absolute;
+  width: 280px;
+  height: 50px;
+  left: 20px;
+  top: 408px;
+
+  background: #ffffff;
+  border: 1px solid #4a56e2;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4a56e2;
+  outline: none;
+}
+
+.BtnReg:hover,
+.BtnReg:focus {
+  background: #24cca7;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .BtnReg {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 120px;
+    top: 358px;
+  }
+}

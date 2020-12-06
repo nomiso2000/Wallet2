@@ -1,0 +1,142 @@
+.statisticsBlock {
+  font-family: 'Circe', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  /* background: rgb(179, 178, 178); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.statHeader {
+  font-size: 30px;
+  font-weight: 400;
+  /* margin-top: 30px; */
+}
+.periodTotal {
+  position: relative;
+  width: 130px;
+  height: 18px;
+  left: 95px;
+  top: 170px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.stat {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.statTable {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  text-align: left;
+}
+.theadStat {
+  height: 58px;
+}
+.theadStat .thStat {
+  height: 58px;
+  background-color: #ffffff;
+  padding: 0 20px 0 20px;
+}
+.theadStat .thStat:first-child {
+  padding-left: 7%;
+  text-align: left;
+  border-radius: 29px 0 0 29px;
+}
+.theadStat .thStat:last-child {
+  border-radius: 0 29px 29px 0;
+  text-align: right;
+  align-items: right;
+  padding-right: 10%;
+}
+
+.tbodyStat .trStat {
+  height: 55px;
+  border-bottom: 2px outset #c1cdd2;
+}
+
+.tbodyStat .trStat:last-child {
+  border-bottom: none;
+  height: 40px;
+  vertical-align: bottom;
+  height: 40px;
+  padding-top: 10px;
+}
+.tbodyStat .trStat:nth-last-child(2) {
+  border-bottom: none;
+  vertical-align: bottom;
+  height: 40px;
+  padding-top: 10px;
+}
+.tbodyStat .trStat:last-child .tdStat:first-child {
+  font-weight: 700;
+  padding-left: 6%;
+}
+.tbodyStat .trStat:nth-last-child(2) .tdStat:first-child {
+  font-weight: 700;
+  padding-left: 6%;
+}
+.tbodyStat .trStat:last-child .tdStat:last-child {
+  font-weight: 700;
+  color: #24cca7;
+}
+.tbodyStat .trStat:nth-last-child(2) .tdStat:last-child {
+  font-weight: 700;
+  color: #ff6596;
+}
+
+.tbodyStat .tdStat:first-child {
+  text-align: left;
+  align-items: left;
+  /* padding-left: 10%; */
+}
+.tbodyStat .tdStat:last-child {
+  text-align: right;
+  align-items: right;
+  padding-right: 10%;
+}
+.nameBlock {
+  width: 90%;
+  display: flex;
+  padding: auto;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 0;
+}
+.color {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  margin-right: 5%;
+}
+.doughnut {
+  width: 320px;
+  height: 380px;
+}
+
+@media (max-width: 767px) {
+  .statisticsBlock {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .stat {
+    width: 100%;
+    align-items: center;
+  }
+  .statTable {
+    width: 90%;
+  }
+  .theadStat .thStat:last-child {
+    padding-right: 11%;
+  }
+}

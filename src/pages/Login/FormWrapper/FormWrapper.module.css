@@ -1,0 +1,28 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.FormWrapper {
+  position: relative;
+  width: 320px;
+  height: 568px;
+  z-index: 5;
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .FormWrapper {
+    width: 540px;
+    height: 468px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .FormWrapper {
+    width: 540px;
+    height: 468px;
+    border-radius: 20px;
+  }
+}

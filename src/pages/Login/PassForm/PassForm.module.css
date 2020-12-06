@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.PassForm {
+  position: absolute;
+  width: 220px;
+  height: 33px;
+  left: 20px;
+  top: 260px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0px 0px 0px 60px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: black;
+  outline: none;
+}
+
+.LockIcon {
+  position: absolute;
+  left: 32.5px;
+  top: 265px;
+  z-index: 2;
+  color: #e0e0e0;
+}
+
+@media (min-width: 768px) {
+  .PassForm {
+    position: absolute;
+    width: 349.5px;
+    height: 34px;
+    left: 65.5px;
+    top: 204px;
+    padding: 12px 0px 0px 60px;
+  }
+
+  .LockIcon {
+    position: absolute;
+    left: 71px;
+    top: 220px;
+    z-index: 2;
+    color: #e0e0e0;
+  }
+}

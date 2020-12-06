@@ -1,0 +1,13 @@
+@import './css/react-notifications.css';
+
+.avoid-clicks-disable {
+  pointer-events: none;
+}
+
+.avoid-clicks-enable {
+  pointer-events: auto;
+}
+
+.cursor-active {
+  cursor: pointer;
+}
