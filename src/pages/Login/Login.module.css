@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .textWallet {
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: 110px;
   padding-left: 60px;
   font-family: 'Poppins';
@@ -25,6 +25,11 @@
   z-index: 3;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .leftWrapper {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .rightWrapper {
     width: 100%;

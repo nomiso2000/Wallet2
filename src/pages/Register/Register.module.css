@@ -119,7 +119,7 @@
 }
 
 .textWallet {
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: 40px;
   padding-left: 60px;
   font-family: 'Poppins';
@@ -221,6 +221,11 @@
   background-color: rgb(36, 204, 167);
   border-radius: 3px;
   box-shadow: 0px 0px 3px 1px rgba(36, 204, 167, 0.75);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .leftWrapper {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {

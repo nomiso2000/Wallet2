@@ -167,7 +167,10 @@ class OverkayBlock extends Component {
   }
 
   handleKeydown = e => {
+    console.log(' e', e);
     if (e.code === 'Escape' || e.target === e.currentTarget) {
+      console.log(' e.target', e.target);
+      console.log('e.currentTarget', e.currentTarget);
       if (this.props.hiden) {
         this.props.hiden();
       } else {
@@ -347,12 +350,13 @@ class OverkayBlock extends Component {
             >
               {this.props.hiden ? 'Добавить' : 'Изменить'}
             </button>
-            <span
+            <button
+              type="button"
               className={[style.contactBtnDel, style.btn].join(' ')}
-              onClick={() => this.handleKeydown}
+              onClick={this.handleKeydown}
             >
               Отменить
-            </span>
+            </button>
           </form>
         </div>
       </div>
