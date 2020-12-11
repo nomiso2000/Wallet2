@@ -1,24 +1,79 @@
 .modalWindow {
   display: flex;
-  /* width: 200px;
-    height: 50px; */
-  background-color: yellow;
+
+  height: 196px;
+  /* background-color: grey; */
+
+  flex-wrap: wrap;
   position: absolute;
-  top: 50%;
-  left: 100%;
+  top: -66px;
+
+  left: 85%;
   transform: translate(0, -50%);
-  /* visibility: visible; */
+
   z-index: 1100;
 }
 
 .editSvg {
   background-image: url('../../icons/edit.svg');
-  width: 20px;
-  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 98px;
+  cursor: pointer;
+}
+.editSvg:hover {
+  background-color: #ebebeb;
 }
 
 .deleteSvg {
   background-image: url('../../icons/delete.svg');
-  width: 20px;
-  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 98px;
+  cursor: pointer;
+}
+.deleteSvg:hover {
+  background-color: #ebebeb;
+}
+@media screen and (min-width: 768px) {
+  .modalWindow {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: space-between;
+    background-color: white;
+
+    position: absolute;
+    top: 25px;
+
+    left: 29%;
+
+    z-index: 1100;
+  }
+
+  .editSvg {
+    background-image: url('../../icons/edit.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .editSvg:hover {
+    background-color: #ebebeb;
+  }
+
+  .deleteSvg {
+    background-image: url('../../icons/delete.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .deleteSvg:hover {
+    background-color: #ebebeb;
+  }
 }

@@ -37,7 +37,6 @@ const Register = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(username, email, password, rePassword);
     if (
       emailValid(email) &&
       password.length >= 4 &&

@@ -27,7 +27,6 @@ export const logIn = (user, history) => async dispatch => {
       message: 'Login Success!',
     });
   } catch (e) {
-    console.log(e.response);
     dispatch({ type: types.LOGIN_FAILURE, payload: e.response.data.message });
   }
 };
@@ -65,7 +64,6 @@ export const getCurrentUser = () => async (dispatch, getState) => {
     //   message: 'getCurrentUser Success!',
     // });
   } catch (e) {
-    console.log(e.response);
     dispatch({ type: types.LOGOUT_FAILURE });
   }
 };
@@ -83,7 +81,6 @@ export const logOut = history => async dispatch => {
       message: 'Logout Success!',
     });
   } catch (e) {
-    console.log(e.response);
     dispatch({ type: types.LOGOUT_FAILURE });
   }
 };

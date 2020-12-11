@@ -45,7 +45,7 @@ const Navigation = () => {
 
                 <Redirect to={routes.HOME.path} />
               </Switch>
-              {loading && 'loading'}
+              {/* {loading && 'loading'} */}
               <ErrorNotification />
             </Suspense>
           </StrictMode>

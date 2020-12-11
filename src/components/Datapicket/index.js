@@ -5,7 +5,9 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 function OverkayBlock(props) {
   const [date, setDate] = useState(new Date());
+
   let nameselect = date.toISOString();
+
   useEffect(() => {
     handleDateSelect();
   }, [date]);

@@ -39,7 +39,6 @@ export default function Login() {
           message: 'Email is not valid!',
         });
       } else if (password.length < 4) {
-        console.log(password);
         return notification({
           type: 'warning',
           message: 'Password is to short!',

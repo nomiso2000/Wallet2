@@ -96,8 +96,8 @@
     justify-content: space-between;
     align-items: start;
     /* height: 76.4vh; */
-    /* height: calc(100vh - 126px); */
-    height: 100vh;
+    height: calc(100vh - 156px);
+    /* height: 100vh; */
     padding-bottom: 28px;
     padding-left: 6.7vw;
     padding-top: 46px;

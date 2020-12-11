@@ -50,7 +50,10 @@ class OverkayBlock extends Component {
 
   handleChange = e => {
     const { name, value } = e.target;
-    this.setState({ [name]: value });
+    let amountNumb = Number(value);
+    if (name === 'amount' && this.state.type === 'EXPENSE' && amountNumb > 0) {
+      this.setState({ amount: '-' + value });
+    } else this.setState({ [name]: value });
   };
 
   onAddContact = value => {
@@ -80,7 +83,7 @@ class OverkayBlock extends Component {
       alert('Не були заповнені всі поля, спробуйте знову');
       return;
     }
-    let amoundNumb = Number(amount);
+
     if (this.audit === 'true') {
       if (this.props.hiden) {
         this.props.addTransaction({
@@ -109,15 +112,6 @@ class OverkayBlock extends Component {
         this.props.handleCloseEditWindow();
       }
     }
-    // this.props.addTransaction({
-    //   transactionDate,
-    //   type,
-    //   categoryId,
-    //   comment,
-    //   amount: amoundNumb,
-    // });
-
-    // this.props.hiden();
 
     this.setState({
       transactionDate: '',
@@ -126,26 +120,10 @@ class OverkayBlock extends Component {
       comment: '',
       amount: '',
     });
-    // this.props.getUserInfo();
-    // this.props.getTransaction();
   };
   async componentDidMount() {
-    // await axios
-    //   .get(
-    //     `https://sheltered-sea-54747.herokuapp.com/api/transaction-categories`,
-    //   )
-    //   .then(({ data }) => {
-    //     console.log(data);
-    //     this.setState({ array: [...data] });
-    //   });
-    // console.log('arr', this.state.array);
-    // this.props.getCategories().then(array => {
-    //   return this.setState({ array });
-    // });
-    // <Datapicker onAddContacts={this.onAddContact} />;
     this.setState({
       array: [...this.props.categoris],
-      // categoryId: this.incomeCategoryId(),
     });
 
     let { transactionDate, type, categoryId, comment, amount, id } = this.state;
@@ -167,10 +145,7 @@ class OverkayBlock extends Component {
   }
 
   handleKeydown = e => {
-    console.log(' e', e);
     if (e.code === 'Escape' || e.target === e.currentTarget) {
-      console.log(' e.target', e.target);
-      console.log('e.currentTarget', e.currentTarget);
       if (this.props.hiden) {
         this.props.hiden();
       } else {
@@ -238,7 +213,7 @@ class OverkayBlock extends Component {
                   style.contactFormItem,
                   style.contactFormItemPrice,
                 ].join(' ')}
-                type="text"
+                type="number"
                 id="amount"
                 autoComplete="off"
                 placeholder="0.00"
@@ -278,55 +253,6 @@ class OverkayBlock extends Component {
                       </option>
                     );
                 })}
-                {/* <option
-                  className={style.SelectItem}
-                  name="Основной"
-                  value={array[2].id}
-                >
-                  Основной
-                </option>
-                <option
-                  className={style.SelectItem}
-                  name="Авто"
-                  value={array[3].id}
-                >
-                  Авто
-                </option>
-                <option
-                  className={style.SelectItem}
-                  name="Развитие"
-                  value={array[4].id}
-                >
-                  Развитие
-                </option>
-                <option
-                  className={style.SelectItem}
-                  name="Дети"
-                  value={array[5].id}
-                >
-                  Дети
-                </option>
-                <option
-                  className={style.SelectItem}
-                  name="Дом"
-                  value={array[6].id}
-                >
-                  Дом
-                </option>
-                <option
-                  className={style.SelectItem}
-                  name="Образование"
-                  value={array[7].id}
-                >
-                  Образование
-                </option>
-                <option
-                  className={style.SelectItem}
-                  name="Остальные"
-                  value={array[8].id}
-                >
-                  Остальные
-                </option> */}
               </select>
             )}
 

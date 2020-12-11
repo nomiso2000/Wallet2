@@ -39,6 +39,8 @@ const balance = (state = 0, { type, payload }) => {
       return payload.balance;
     case types.ADD_SUCCESS:
       return payload.balanceAfter;
+    case types.LOGIN_SUCCESS:
+      return payload.user.balance;
     case types.LOGOUT_SUCCESS:
       return null;
 

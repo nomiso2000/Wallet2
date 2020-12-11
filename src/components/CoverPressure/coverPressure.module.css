@@ -124,6 +124,9 @@ background: #4A56E2; */
   width: 190px;
   color: #000000;
 }
+.contactFormItemPrice::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 .contactFormItemСalendar {
   text-align: center;
@@ -299,6 +302,7 @@ input:checked + .slider:before {
     width: 280px;
     margin-bottom: 10px;
     margin-top: 30px;
+    /* appearance: none; */
   }
   .contactFormItemComent {
     margin: 0 auto;

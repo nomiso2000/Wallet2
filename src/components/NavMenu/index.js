@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import styles from './NavMenu.module.css';
 import { NavLink, useLocation } from 'react-router-dom';
 import home from '../../styles/css/icon/home.svg';
-import graph from '../../styles/css/icon/graph.svg';
+import graph from '../../styles/css/icon/NavDiagram.svg';
 import usd from '../../styles/css/icon/usd.svg';
 import routes from '../../routes';
 import Currency from '../Currency';
 import Balance from '../Balance';
 import mobHome from '../../styles/css/icon/HomeForMob.svg';
-import mobStat from '../../styles/css/icon/StatForMob.svg';
+import mobStat from '../../styles/css/icon/NavDiagramMob.svg';
 
 function NavMenu() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
